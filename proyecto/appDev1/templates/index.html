@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanessa Bastidas – Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+ 
+    <div class="noise"></div>
+ 
+    <aside class="sidebar">
+        <div class="sidebar-top">
+            <div class="avatar-wrapper">
+                <div class="avatar-ring"></div>
+                <div class="avatar-initials">VM</div>
+            </div>
+            <h1 class="name">Vanessa<br><span>Bastidas</span></h1>
+            <p class="tagline">Ing. de Software</p>
+        </div>
+ 
+        <nav class="contact">
+            <a href="mailto:vanessa.bastidas@campusucc.edu.co" class="contact-item">
+                <span class="icon">✉</span>
+                <span>vanessa.bastidas@campusucc.edu.co</span>
+            </a>
+            <a href="tel:3145784875" class="contact-item">
+                <span class="icon">✆</span>
+                <span>314 578 4875</span>
+            </a>
+            <div class="contact-item">
+                <span class="icon">⌂</span>
+                <span>cra42 n17A-189 B/El Dorado</span>
+            </div>
+            <a href="https://github.com/vanessabastidas03" target="_blank" class="contact-item">
+                <span class="icon">⌥</span>
+                <span>github.com/vanessabastidas03</span>
+            </a>
+            <a href="https://linkedin.com/in/vanessa-bastidas-0764433b8" target="_blank" class="contact-item">
+                <span class="icon">in</span>
+                <span>linkedin.com/in/vanessa-bastidas</span>
+            </a>
+        </nav>
+ 
+        <div class="skills-section">
+            <h3 class="section-label">Habilidades</h3>
+            <div class="skill-group">
+                <div class="skill-item">
+                    <span class="skill-name">Python · JS · TypeScript</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--w:40%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">HTML · CSS · React</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--w:60%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">Git y GitHub</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span class="skill-name">SQL · PowerBI</span>
+                    <div class="skill-bar"><div class="skill-fill" style="--w:25%"></div></div>
+                </div>
+            </div>
+ 
+            <div class="soft-skills">
+                <span class="tag">Adaptación</span>
+                <span class="tag">Comunicación</span>
+                <span class="tag">Resolución de problemas</span>
+                <span class="tag">Trabajo en equipo</span>
+                <span class="tag">Aprendizaje rápido</span>
+            </div>
+        </div>
+    </aside>
+ 
+    <main class="content">
+ 
+        <section class="section fade-in">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2>Perfil</h2>
+            </div>
+            <div class="profile-text">
+                <p>Estudiante de Ingeniería de Software con gran interés en el desarrollo web y programación. Me caracterizo por mi disposición para aprender, responsabilidad y trabajo en equipo. Busco una oportunidad para fortalecer mis habilidades técnicas, adquirir experiencia real en proyectos y aportar activamente al crecimiento del equipo.</p>
+                <p>Mi ambición es continuar creciendo profesionalmente en el campo de la ingeniería de software, enfocándome especialmente en el desarrollo de soluciones innovadoras y tecnológicas. Destaco mi capacidad para adaptarme rápidamente y mi enfoque proactivo para encontrar soluciones eficientes.</p>
+            </div>
+        </section>
+ 
+        <section class="section fade-in">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2>Formación</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-body">
+                        <div class="timeline-top">
+                            <h4>Ingeniería de Software</h4>
+                            <span class="timeline-date">Presente</span>
+                        </div>
+                        <p class="timeline-place">Universidad Cooperativa de Colombia · Campus Pasto</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section class="section fade-in">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2>Experiencia</h2>
+            </div>
+            <div class="experience-card">
+                <div class="exp-header">
+                    <div>
+                        <h4>Proyectos Académicos</h4>
+                        <p class="exp-place">Universidad Cooperativa de Colombia</p>
+                    </div>
+                    <span class="exp-badge">Académico</span>
+                </div>
+                <ul class="exp-list">
+                    <li>Desarrollo de aplicaciones móviles usando Flutter y Dart</li>
+                    <li>Implementación de interfaces modernas y navegación entre pantallas</li>
+                    <li>Aplicación de principios de programación, lógica y diseño UI/UX</li>
+                    <li>Implementación de interfaces intuitivas y estructuración de código limpio</li>
+                </ul>
+            </div>
+        </section>
+ 
+    </main>
+ 
+    <script>
+        const items = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    e.target.style.animationDelay = `${i * 0.1}s`;
+                    e.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        items.forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
+ 
