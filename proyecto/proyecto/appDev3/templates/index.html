@@ -1,0 +1,314 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Fernando Rosero | Software Engineer & Contador Público</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/cv-styles.css' %}">
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Header -->
+        <header class="cv-header">
+            <div class="header-content">
+                <div class="logo-box">
+                    <span class="logo-text">FR</span>
+                </div>
+                <div class="header-info">
+                    <h1 class="name">Fernando Rosero</h1>
+                    <p class="title">Software Engineer & Contador Público</p>
+                    <p class="tagline">El puente entre código y finanzas</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">fernando@rosero.dev</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Teléfono</span>
+                    <span class="contact-value">+57 300 123 4567</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Ubicación</span>
+                    <span class="contact-value">Pasto, Colombia</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/fernandorosero</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/fernandorosero</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="cv-main">
+            <!-- Left Column -->
+            <aside class="cv-sidebar">
+                <!-- Perfil -->
+                <section class="cv-section">
+                    <h2 class="section-title">Perfil Profesional</h2>
+                    <p class="section-text">
+                        Estudiante de Ingeniería de Software y Contador Público con pasión por crear 
+                        soluciones tecnológicas que optimizan procesos financieros. Combino análisis 
+                        contable con desarrollo full-stack para construir sistemas robustos y escalables.
+                    </p>
+                </section>
+
+                <!-- Habilidades Técnicas -->
+                <section class="cv-section">
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Next.js & React</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js & APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL & MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Habilidades Financieras -->
+                <section class="cv-section">
+                    <h2 class="section-title">Habilidades Financieras</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Contabilidad Financiera</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tributación</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Auditoría</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Análisis Financiero</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width: 93%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Idiomas -->
+                <section class="cv-section">
+                    <h2 class="section-title">Idiomas</h2>
+                    <div class="language-list">
+                        <div class="language-item">
+                            <span class="language-name">Español</span>
+                            <span class="language-level">Nativo</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Inglés</span>
+                            <span class="language-level">Intermedio</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certificaciones -->
+                <section class="cv-section">
+                    <h2 class="section-title">Certificaciones</h2>
+                    <ul class="cert-list">
+                        <li>Next.js Professional Certification</li>
+                        <li>AWS Cloud Practitioner</li>
+                        <li>Normas Internacionales de Contabilidad</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Right Column -->
+            <main class="cv-content">
+                <!-- Experiencia Laboral -->
+                <section class="cv-section">
+                    <h2 class="section-title-main">Experiencia Laboral</h2>
+                    
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Desarrollador Full-Stack Freelance</h3>
+                                <p class="exp-company">Independiente</p>
+                            </div>
+                            <div class="exp-period">
+                                <span class="period-badge active">2021 - Presente</span>
+                            </div>
+                        </div>
+                        <ul class="exp-description">
+                            <li>Desarrollo de aplicaciones web y sistemas de gestión para pequeñas y medianas empresas</li>
+                            <li>Especialización en soluciones financieras y contables automatizadas</li>
+                            <li>Implementación de arquitecturas escalables con Next.js, TypeScript y PostgreSQL</li>
+                            <li>Integración de APIs de terceros para facturación electrónica y pagos</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Asistente Contable</h3>
+                                <p class="exp-company">Estudio Contable Rosero & Asociados</p>
+                            </div>
+                            <div class="exp-period">
+                                <span class="period-badge">2019 - 2021</span>
+                            </div>
+                        </div>
+                        <ul class="exp-description">
+                            <li>Gestión de registros contables y preparación de estados financieros</li>
+                            <li>Elaboración de declaraciones tributarias para personas naturales y jurídicas</li>
+                            <li>Implementación de procesos digitales para optimización de tareas</li>
+                            <li>Asesoría contable y tributaria a clientes del estudio</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Educación -->
+                <section class="cv-section">
+                    <h2 class="section-title-main">Educación</h2>
+                    
+                    <div class="education-item">
+                        <div class="edu-header">
+                            <div>
+                                <h3 class="edu-title">Ingeniería de Software</h3>
+                                <p class="edu-institution">Universidad de Nariño</p>
+                            </div>
+                            <div class="edu-period">
+                                <span class="period-badge active">2020 - Presente</span>
+                            </div>
+                        </div>
+                        <p class="edu-description">
+                            Formación en desarrollo de software, arquitectura de sistemas, bases de datos 
+                            y metodologías ágiles. Enfoque en tecnologías web modernas y soluciones escalables.
+                        </p>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="edu-header">
+                            <div>
+                                <h3 class="edu-title">Contador Público</h3>
+                                <p class="edu-institution">Universidad de Nariño</p>
+                            </div>
+                            <div class="edu-period">
+                                <span class="period-badge">2018 - 2023</span>
+                            </div>
+                        </div>
+                        <p class="edu-description">
+                            Título profesional en Contaduría Pública con énfasis en auditoría, tributación 
+                            y análisis financiero. Experiencia en normatividad contable colombiana e internacional.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Proyectos Destacados -->
+                <section class="cv-section">
+                    <h2 class="section-title-main">Proyectos Destacados</h2>
+                    
+                    <div class="project-item">
+                        <h3 class="project-title">Portafolio Personal Profesional</h3>
+                        <p class="project-tech">Next.js 14 · TypeScript · Tailwind CSS · Framer Motion</p>
+                        <p class="project-description">
+                            Portafolio web moderno con modo claro/oscuro, animaciones fluidas, formulario 
+                            de contacto funcional y diseño completamente responsive. Incluye sistema de 
+                            temas, Server Actions y arquitectura escalable.
+                        </p>
+                        <a href="https://github.com/fernandorosero/portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Ver código en GitHub
+                        </a>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="project-title">Sistema de Gestión Contable SaaS</h3>
+                        <p class="project-tech">Next.js · TypeScript · PostgreSQL · Stripe</p>
+                        <p class="project-description">
+                            Plataforma web para gestión contable de pequeñas empresas con facturación 
+                            electrónica, reportes financieros automatizados y dashboard analítico en tiempo real.
+                        </p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="project-title">Automatización de Declaraciones Tributarias</h3>
+                        <p class="project-tech">Python · Pandas · API DIAN</p>
+                        <p class="project-description">
+                            Herramienta de automatización para generación de declaraciones tributarias 
+                            con integración directa a la DIAN, reduciendo tiempo de procesamiento en 80%.
+                        </p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="project-title">Dashboard Financiero Empresarial</h3>
+                        <p class="project-tech">React · Node.js · MongoDB · Chart.js</p>
+                        <p class="project-description">
+                            Dashboard interactivo para visualización de KPIs financieros con análisis 
+                            predictivo y generación de reportes personalizados.
+                        </p>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="cv-footer">
+            <div class="footer-content">
+                <p class="footer-text">
+                    <strong>Referencias disponibles a solicitud</strong>
+                </p>
+                <p class="footer-date">
+                    Actualizado: Marzo 2024
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Action Buttons (hidden in print) -->
+    <div class="action-buttons no-print">
+        <a href="https://github.com/fernandorosero" target="_blank" rel="noopener noreferrer" class="action-button github-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            Ver en GitHub
+        </a>
+        <button class="action-button print-button" onclick="window.print()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Imprimir CV
+        </button>
+    </div>
+</body>
+</html>
